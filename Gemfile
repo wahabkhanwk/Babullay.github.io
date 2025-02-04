@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-ruby "~> 3.2.2"  # Lock Ruby version to 3.2.x for compatibility
+# Enforce Ruby version for compatibility
+ruby "~> 3.2.2"  # This is the critical line for Ruby version specification
 
 gem "jekyll", "~> 4.2.2"
 gem "webrick", "~> 1.7"
