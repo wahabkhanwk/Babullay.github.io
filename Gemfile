@@ -10,6 +10,5 @@ group :jekyll_plugins do
   gem "jekyll-compose", "~> 0.12.0"
   gem "jekyll-postfiles", "~> 3.1"
   gem "webrick", "~> 1.7"
-  # Remove this if causing errors:
-  gem "jekyll-spaceship"
+  # Remove this if causing errors
 end
