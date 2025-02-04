@@ -1,0 +1,19 @@
+[
+  
+    {
+      "title"    : "Welcome to Jekyll!",
+      "description" : "",
+      "tags"     : "",
+      "url"      : "/welcome-to-jekyll/",
+      "date"     : "2025-01-29 17:31:53 +0700"
+    } ,
+  
+    {
+      "title"    : "How to Initiate a UART Shell and Analyze Bootloader Information in Embedded Systems",
+      "description" : "",
+      "tags"     : "Hardware Hacking",
+      "url"      : "/How-to-Initiate-a-UART-Shell-and-Analyze-Bootloader-Information-in-Embedded-Systems/",
+      "date"     : "2025-01-28 16:28:05 +0700"
+    } 
+  
+]
