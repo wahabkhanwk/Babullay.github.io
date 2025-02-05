@@ -1,23 +1,25 @@
 source "https://rubygems.org"
-ruby "3.1.4"
-# Updated Jekyll version for compatibility with Ruby 3.3.0
-gem "jekyll", "~> 4.2.0"
 
-# Plugins and dependencies
+# Specify the compatible Ruby version
+ruby "3.3.0"
+
+# Jekyll version compatible with Ruby 3.3.0
+gem "jekyll", "~> 4.3.2"
+
+# Jekyll plugins
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.15"
-  gem "jekyll-sitemap", "~> 1.4"
-  gem "jekyll-compose", "~> 0.13.0"
-  gem "jekyll-postfiles", "~> 3.1"
-  gem "jekyll-spaceship"
+  gem 'jekyll-feed', '~> 0.17'
+  gem 'jekyll-sitemap', '~> 1.4'
+  gem 'jekyll-compose', '~> 0.13.0'
+  gem 'jekyll-postfiles', '~> 3.1'
+  gem 'jekyll-spaceship'
 end
 
-# Required for Ruby 3.3.0 compatibility
+# Webrick is required for serving Jekyll locally
 gem "webrick", "~> 1.8"
 
+# Ensure compatibility with Windows if needed
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform? 
-
-# Ensuring compatibility with latest bundler
-gem "bundler", "~> 2.4"
+# Optional: Performance booster for watching directories on Windows
+gem "wdm", "~> 0.1.1" if Gem.win_platform?
