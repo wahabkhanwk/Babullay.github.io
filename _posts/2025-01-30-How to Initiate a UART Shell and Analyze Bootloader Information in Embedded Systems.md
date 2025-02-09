@@ -16,7 +16,7 @@ UART Pin → USB to TTL Pin
  TX (Transmit) → RX (Receive)
 GND (Ground) → GND
 
-![USB to ttl](image.png)
+![USB to ttl](/_posts/image.png)
 
 With the connections in place, you'll need to identify the USB port to which your USB to TTL device is connected. On Windows, this port is usually labeled as `COM3` or similar, while on Linux-based systems like Ubuntu, it is referred to as `ttyUSB0` or `tty0`.
 ## Baud Rate Configuration:
@@ -25,4 +25,4 @@ Once everything is set, fire up a terminal program like PuTTY (Windows) or `scre
 ## Understanding the Boot Sequence in Embedded Systems
 Before diving into the bootloader analysis, it's important to understand how the boot sequence works in embedded systems. The boot process typically starts with a small amount of RAM and ROM within the chip, containing the Primary Program Loader. This loader's job is to load the U-Boot (a universal bootloader) from external ROM into RAM.
 
-![High Level Block Diagram Of Boot Sequence](image-1.png)
+![High Level Block Diagram Of Boot Sequence](/_posts/image-1.png)
